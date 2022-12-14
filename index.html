@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Web</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">Pagina Web</h2>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Acerca de</a>
+                </li>
+                
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Acceder</a>
+                </li>
+
+                <img src="./images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+
+        <section class="hero__container container">
+            <h1 class="hero__title">Esta es nuestra Pagina Web</h1>
+            <p class="hero__paragraph"> Aqui va un Texto</p>
+                
+            <a href="#" class="cta">Comienza ahora</a>
+        </section>
+    </header>
+
+    <main>
+        <section class="container about">
+            <h2 class="subtitle">   Aqui va algunas informaciones</h2>
+            <p class="about__paragraph">Aqui va un Texto</p>
+
+            <div class="about__main">
+                <article class="about__icons">
+                    <img src="./images/registro-en-linea.png" class="about__icon">
+                    <h3 class="about__title">Registro</h3>
+                    <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
+                        porro eius facilis?</p>
+                </article>
+                <article class="about__icons">
+                    <img src="./images/dato.png" class="about__icon">
+                    <h3 class="about__title">Base de datos</h3>
+                    <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
+                        porro eius facilis?</p>
+                </article>
+            </div>
+        </section>
+         <section class="hero__container container">
+                <h2 class="hero__title">Nuestro Grupo</h3>
+        <section class="testimony">
+            <div class="testimony__container container">
+                <img src="./images/leftarrow.svg" class="testimony__arrow" id="before">
+
+                <section class="testimony__body testimony__body--show" data-id="1">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es... , <span class="testimony__course">
+                                </span></h2>
+                        <p class="testimony__review">estudiante del ITLA</p>
+                    </div>
+                    <figure class="testimony__picture">
+                    </figure>
+                </section>
+                <section class="testimony__body" data-id="2">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es... , <span class="testimony__course"></span></h2>
+                        <p class="testimony__review">Soy Estudiante del..</p>
+                    </div>
+                    
+                </section>
+                <section class="testimony__body" data-id="3">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Dervin Ransiel  <span class="testimony__course"></span></h2>
+                        <p class="testimony__review">Soy Estudiante del..</p>
+                    </div>
+                </section>
+                <section class="testimony__body" data-id="4">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es  <span class="testimony__course"></span></h2>
+                        <p class="testimony__review">Soy Estudiante del..</p>
+                    </div>
+                   
+                </section>
+                <img src="./images/rightarrow.svg" class="testimony__rarrow" id="next">
+            </div>
+        </section>
+
+
+                    </div>
+                </article>
+                </article>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Ya tienes una cuenta?</h2>
+            </nav>
+            <form class="form">
+     
+                <h2 class="form_title" >Crear una nueva cuenta </h2>
+            
+                <div class="form_container">
+                     
+                    <div class="form_group">
+                        <input type="text" id="user" class="form_input" placeholder=" ">
+                        <label for="user" class="form_label">Nombre de Usuario:</label>
+                        <span class="form_line"></span>
+                    </div>
+                    <div class="form_group">
+                        <input type="text" id="user" class="form_input" placeholder=" ">
+                        <label for="user" class="form_label">Correo Electronico</label>
+                        <span class="form_line"></span>
+                    </div>
+                    <div class="form_group">
+                        <input type="password" id="password" class="form_input" placeholder=" " requeride="" pattern="[0-9]+">
+                        <label for="password" class="form_label">Contraseña:</label> 
+                        <span  class="form_line"></span> 
+                    </div>
+                    <div class="form_group">
+                        <input type="password" id="password" class="form_input" placeholder=" " requeride="" pattern="[0-9]+">
+                        <label for="password" class="form_label">Contraseña(De nuevo):</label> 
+                        <span  class="form_line"></span> 
+                    </div>
+                    
+                    <a href ="#" class="form_submit" onclick="guardar()" style="text-decoration:none">Registrate</a>
+                </div> 
+                
+        </form>
+        <script type="text/javascript">
+            function myFuction(){
+                var x = document.getElementById("password");
+                if (x.type==="password"){
+                    x.type="text";
+                } else {
+                    x.type="password";
+                }
+           
+           
+            }
+       </script>
+        </section>
+
+     
+    </footer>
+
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>
